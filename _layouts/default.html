@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>MiBarista.com</title>
+  <meta name="description" content="Bringing the flavors and aromas of a cafe to southeast Michigan." />	
+  <meta property="og:url"
+    content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:title" content="MiBarista.com" />
+  <meta property="og:description" content="Bringing the flavors and aromas of a cafe to southeast Michigan." />
+  <meta property="og:image" content="{{ site.url }}/assets/images/mibarista-background.jpeg" />
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico"  | absolute_url }}" type="image/x-icon">
+</head>
+<body>
+<div class="main">
+<div class="masthead">
+  <h1>{{ site.title }}</h1>
+</div>
+<div class="container">
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="estimate">
+  </div>
+</div>
+</body>
+</html>
