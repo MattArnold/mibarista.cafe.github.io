@@ -6,8 +6,10 @@
             hours_input =     document.querySelector('#hours'),
             num_hours =       document.querySelector('#num_hours'),
             total_field =           document.querySelector('#total');
-        num_customers.innerHTML = customers_input.value * 50;
-        num_hours.innerHTML = hours_input.value;
+        customers_input.value = 1;
+        num_customers.innerHTML = 50;
+        hours_input.value = 2;
+        num_hours.innerHTML = 2;
         customers_input.addEventListener('change', function(){
             num_customers.innerHTML = customers_input.value * 50;
             setTotal();
