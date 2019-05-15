@@ -182,11 +182,21 @@ pre {
  */
 .wrapper {
   display: grid;
-  width: 90%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
+}
+@media (orientation: landscape) {
+  .wrapper {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
+}
+@media (orientation: portrait) {
+  .wrapper {
+    width: 100%;
+    grid-auto-flow: row;
+  }
+}
 
 /**
  * Clearfix
