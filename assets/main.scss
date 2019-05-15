@@ -184,17 +184,23 @@ pre {
   display: grid;
   grid-gap: 1rem;
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 1100px) {
   .wrapper {
     width: 90%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
-@media (orientation: portrait) {
+@media (orientation: portrait) or (max-width: 1099px) {
   .wrapper {
     width: 100%;
     grid-auto-flow: row;
+  }
+  .col {
+    min-height: unset;
+  }
+  .col:first-child {
+    grid-row: 1;
   }
 }
 
