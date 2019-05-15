@@ -29,6 +29,8 @@ dl, dd, ol, ul, figure {
 .col {
   background-color: $almost-white;
   padding: 2rem;
+  min-width: 18rem;
+  min-height: 18rem;
 }
 
 .col:first-child {
@@ -182,15 +184,9 @@ pre {
   display: grid;
   width: 90%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-templet-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
   }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
 
 /**
  * Clearfix
