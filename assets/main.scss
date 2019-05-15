@@ -194,13 +194,7 @@ pre {
 @media (max-width: 1099px) {
   body {
     font-size: 2rem;
-  }
-  #num_customers, #num_hours {
-    font-size: 3rem;
-  }
-  
-  #total {
-    font-size: 4rem;
+    background-position: center 16rem;
   }
   .wrapper {
     width: 100%;
@@ -211,6 +205,14 @@ pre {
   }
   .col:first-child {
     grid-row: 1;
+    height: 50rem;
+  }
+  #num_customers, #num_hours {
+    font-size: 3rem;
+  }
+  
+  #total {
+    font-size: 4rem;
   }
 }
 
