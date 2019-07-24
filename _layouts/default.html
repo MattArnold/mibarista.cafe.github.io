@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>MiBarista.com</title>
-  <meta name="description" content="Bringing the flavors and aromas of a cafe to southeast Michigan." />	
+  <title>MiBarista</title>
+  <meta name="description" content="A mobile espresso cart service for your gathering in southeast Michigan." />	
   <meta property="og:url"
     content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta property="og:title" content="MiBarista.com" />
-  <meta property="og:description" content="Bringing the flavors and aromas of a cafe to southeast Michigan." />
+  <meta property="og:title" content="MiBarista" />
+  <meta property="og:description" content="A mobile espresso cart service for your gathering in southeast Michigan." />
   <meta property="og:image" content="{{ site.url }}/assets/images/mibarista-background.jpeg" />
   <link href="assets/main.css" rel="stylesheet" type="text/css" media="all" />
   <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
@@ -22,6 +22,9 @@
   </div>
   <div class="col">
     {{ content }}
+  </div>
+  <div class="col">
+    {% include contact.html %}
   </div>
   <div class="col">
     {% include estimate.html %}

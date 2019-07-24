@@ -65,6 +65,18 @@ h1 {
   font-size: 3rem;
 }
 
+input#send {
+    background-color: #783B26;
+    color: rgb(216,216,216);
+    font-size: x-large;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    float: right;
+    border: none;
+    box-shadow: 0.2rem 0.2rem 0.2rem $dark;
+}
+
 /**
  * Basic styling
  */
@@ -196,7 +208,7 @@ pre {
   .wrapper {
     width: 90%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 @media (max-width: 1099px) {

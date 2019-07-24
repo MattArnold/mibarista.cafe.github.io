@@ -1,0 +1,42 @@
+<script type="text/javascript">var submitted=false;</script>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='sent.html';}"></iframe>
+
+<form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSc1qCBz0m7M6Zmd5CIiqcfB8mqpdROFsF5KmneqZD9nIyaCOg/formResponse" target="hidden_iframe" onsubmit="submitted=true;" method="POST" id="mG61Hd">
+
+<h2>Contact Us</h2>
+
+<h3>Your Email Address:</h3>
+
+<p><input type="email" tabindex="1" max-length="70" name="emailAddress" required /></p>
+
+<h3>Your Message:</h3>
+
+<p><textarea name="entry.171233085" tabindex="7" rows="7" style="width: 90%" required ></textarea><label for="entry.2040345972" style="visibility: hidden; height: 0; padding: 0;">Leave empty:</label><input type="text" max-length="70" name="entry.2040345972" style="visibility: hidden; height: 0; padding: 0;" /></p>
+
+<input type="radio" name="entry.1742845096" id="bot" value="bot" hidden>
+<input type="radio" name="entry.1742845096" id="human" value="human" hidden>
+
+<p><input id="send" type="submit" value="Send" tabindex="8"/></p>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    var bot = document.getElementById('bot'),
+        human = document.getElementById('human'),
+        email_field = document.getElementsByName('emailAddress')[0],
+        start_time = new Date(),
+        milliseconds = 0,
+        measure = function (e) {
+          elapsed_time = new Date();
+          milliseconds = elapsed_time - start_time;
+          if (milliseconds > 999) {
+            human.checked = true;
+            e.target.removeEventListener('change', measure, false);
+          } else {
+            bot.checked = true;
+          }
+        };
+    email_field.addEventListener('change', measure, false);
+  });
+</script>
+</form>
