@@ -26,6 +26,14 @@ dl, dd, ol, ul, figure {
   padding: 2rem;
 }
 
+h1 {
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $brown;
+}
+
 .col {
   background-color: $almost-white;
   padding: 2rem;
